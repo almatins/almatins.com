@@ -1,14 +1,43 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<h1>{{ page.title }}</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<p>
-  {{ page.date | date_to_string }} {% assign author = site.authors | where:
-  'short_name', page.author | first %} {% if author %} -
-  <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-{{ content }}
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="/assets/css/monokai.css" rel="stylesheet" />
+    {% feed_meta %} {% seo %}
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body style="font-family: Raleway;">
+    {% include navigation.html %}
+    <hr class="border-thin mb-4" />
+
+    <div class="m-4 text-xl">
+      <h1 class="font-bold">{{ page.title }}</h1>
+      <p class="text-xs">
+        {{ page.date | date_to_string }} {% assign author = site.authors |
+        where: 'short_name', page.author | first %} {% if author %} -
+        <a href="{{ author.url }}">{{ author.name }}</a>
+        {% endif %}
+      </p>
+    </div>
+    <div class="m-4 text-justify">
+      {{ content }}
+    </div>
+  </body>
+</html>

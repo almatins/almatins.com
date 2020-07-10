@@ -1,75 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Test Post</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="/assets/css/monokai.css" rel="stylesheet" />
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" /> <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Test Post</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Test Post" />
 <meta name="author" content="almatins" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa." />
-<meta property="og:description" content="A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa." />
+<meta name="description" content="Why Jekyll?" />
+<meta property="og:description" content="Why Jekyll?" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-10T17:07:22+07:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"/daily/personal/2020/07/10/jekyll-installing.html"},"author":{"@type":"Person","name":"almatins"},"url":"/daily/personal/2020/07/10/jekyll-installing.html","headline":"Test Post","dateModified":"2020-07-10T17:07:22+07:00","datePublished":"2020-07-10T17:07:22+07:00","description":"A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/daily/personal/2020/07/10/jekyll-installing.html"},"url":"/daily/personal/2020/07/10/jekyll-installing.html","author":{"@type":"Person","name":"almatins"},"headline":"Test Post","description":"Why Jekyll?","dateModified":"2020-07-10T17:07:22+07:00","datePublished":"2020-07-10T17:07:22+07:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
+    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
-  <body>
-    <nav>
+  <body style="font-family: Raleway;">
+    <nav class="flex m-4">
   
-    <a href="/" >Home</a>
+    <a class="mr-6" href="/" >Home</a>
   
-    <a href="/about.html" >About</a>
-  
-    <a href="/blog.html" >Blog</a>
-  
-    <a href="/staff.html" >Staff</a>
+    <a class="mr-6" href="/blog.html" >Blog</a>
   
 </nav>
 
-    <!-- Html Elements for Search -->
-    <div id="search-container">
-      <input type="text" id="search-input" placeholder="search..." />
-      <ul id="results-container"></ul>
+    <hr class="border-thin mb-4" />
+
+    <div class="m-4 text-xl">
+      <h1 class="font-bold">Test Post</h1>
+      <p class="text-xs">
+        10 Jul 2020   -
+        <a href="/authors/almatins.html">Almatin Siswanto</a>
+        
+      </p>
     </div>
+    <div class="m-4 text-justify">
+      <p class="text-xl font-bold">Why Jekyll?</p>
 
-    <!-- Script pointing to search-script.js -->
-    <script src="/assets/js/search.js" type="text/javascript"></script>
+<p>I love simple things, fast loading, easy to write and etc. That’s why I choose Jekyll for my blog. I use markdown on my daily basis, so, it feels like I just write my daily notes here.</p>
 
-    <!-- Configuration -->
-    <script>
-      SimpleJekyllSearch({
-        searchInput: document.getElementById("search-input"),
-        resultsContainer: document.getElementById("results-container"),
-        searchResultTemplate:
-          '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
-        noResultsText: "No results found",
-        limit: 10,
-        json: "/search.json",
-      });
-    </script>
-    <h1>Test Post</h1>
+<h2 id="false,h1-header">H1 Header</h2>
 
-<p>
-  10 Jul 2020   -
-  <a href="/authors/almatins.html">Almatin Siswanto</a>
-  
-</p>
+<p><em>bold</em></p>
 
-<p>A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.</p>
+<p><strong>bold</strong></p>
 
-<p>In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span><span class="p">(</span><span class="nx">stat</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stat</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
+<p>This is a demo of all styled elements in Jekyll Now.</p>
 
+<p><a href="https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md">View the markdown used to create this post</a>.</p>
+
+<p>This is a paragraph, it’s surrounded by whitespace. Next up are some headers, they’re heavily influenced by GitHub’s markdown style.</p>
+
+<h2 id="false,header-2-h1-is-reserved-for-post-titles">Header 2 (H1 is reserved for post titles)</h2>
+
+<h3 id="false,header-3">Header 3</h3>
+
+<h4 id="false,header-4">Header 4</h4>
+
+<p>A link to <a href="http://github.com/barryclark/jekyll-now/">Jekyll Now</a>. A big ass literal link <a href="http://github.com/barryclark/jekyll-now/">http://github.com/barryclark/jekyll-now/</a></p>
+
+<p>An image, located within /images</p>
+
+<p><img src="/images/jekyll-logo.png" alt="an image alt text" title="an image title" /></p>
+
+<ul>
+  <li>
+    <p>A bulletted list</p>
+  </li>
+  <li>
+    <p>alternative syntax 1</p>
+  </li>
+  <li>
+    <p>alternative syntax 2</p>
+    <ul>
+      <li>an indented list item</li>
+    </ul>
+  </li>
+</ul>
+
+<ol>
+  <li>An</li>
+  <li>ordered</li>
+  <li>list</li>
+</ol>
+
+<p>Inline markup styles:</p>
+
+<ul>
+  <li><em>italics</em></li>
+  <li><strong>bold</strong></li>
+  <li><code class="language-plaintext highlighter-rouge">code()</code></li>
+</ul>
+
+<blockquote>
+  <p>Blockquote</p>
+
+  <blockquote>
+    <p>Nested Blockquote</p>
+  </blockquote>
+</blockquote>
+
+<p>Syntax highlighting can be used by wrapping your code in a liquid tag like so:</p>
+
+<p>{% highlight javascript %}<br />
+/_ Some pointless Javascript _/
+var rawr = [“r”, “a”, “w”, “r”];
+{% endhighlight %}</p>
+
+<p>creates…</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="o">/</span><span class="nx">_</span> <span class="nx">Some</span> <span class="nx">pointless</span> <span class="nx">Javascript</span> <span class="nx">_</span><span class="o">/</span>
+<span class="kd">var</span> <span class="nx">rawr</span> <span class="o">=</span> <span class="p">[</span><span class="dl">"</span><span class="s2">r</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">w</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">r</span><span class="dl">"</span><span class="p">];</span></code></pre></figure>
+
+<p>Use two trailing spaces<br />
+on the right<br />
+to create linebreak tags</p>
+
+<p>Finally, horizontal lines</p>
+
+<hr />
+<hr />
+
+    </div>
   </body>
 </html>

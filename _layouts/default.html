@@ -7,6 +7,28 @@
     {% feed_meta %} {% seo %}
   </head>
   <body>
-    {% include navigation.html %} {{ content }}
+    {% include navigation.html %}
+    <!-- Html Elements for Search -->
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="search..." />
+      <ul id="results-container"></ul>
+    </div>
+
+    <!-- Script pointing to search-script.js -->
+    <script src="/assets/js/search.js" type="text/javascript"></script>
+
+    <!-- Configuration -->
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById("search-input"),
+        resultsContainer: document.getElementById("results-container"),
+        searchResultTemplate:
+          '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
+        noResultsText: "No results found",
+        limit: 10,
+        json: "/search.json",
+      });
+    </script>
+    {{ content }}
   </body>
 </html>

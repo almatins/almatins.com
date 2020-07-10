@@ -2,8 +2,8 @@
 layout: post
 title: "Test Post"
 author: almatins
-categories: daily, personal
-tags: daily, note
+categories: daily personal
+tags: daily note
 date: 2020-07-10 10:07:22
 ---
 A banana is an edible fruit – botanically a berry – produced by several kinds

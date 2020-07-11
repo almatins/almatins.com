@@ -40,3 +40,5 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   syntax_highlighter: rouge
   show_warnings: false
+
+incremental: true

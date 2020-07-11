@@ -1,0 +1,25 @@
+{
+  "name": "almatins.github.io",
+  "version": "1.0.0",
+  "description": "Remote Fullstack Software Developer",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss assets/css/tailwind.css -o assets/css/tw.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almatins/almatins.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almatins/almatins.github.io/issues"
+  },
+  "homepage": "https://github.com/almatins/almatins.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  }
+}
